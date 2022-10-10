@@ -1,1 +1,252 @@
-<h1>Header</h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			header {
+				background-color: #666;
+				padding: 25px;
+				text-align: center;
+				font-size: 20px;
+				color: white;
+			}
+
+			article {
+				padding: 2px;
+				background-color: #ccc;
+			}
+
+			body {
+				font-family: Helvetica;
+			}
+
+			ol.no-bullets {
+				list-style-type: none;
+				margin: 0;
+				padding: 5px;
+			}
+
+			h2 {
+				text-align: center;
+			}
+
+			h3 {
+				font-size: 16px;
+				text-decoration: underline;
+			}
+
+			h4 {
+				font-size: 15px;
+			}
+
+			h5 {
+				font-size: 18px;
+				margin: 0;
+				padding: 0px;
+			}
+
+			h6 {
+				text-align: center;
+				font-size: 18px;
+				margin: 0;
+				padding: 0px;
+			}
+
+			table, th, td {
+				border: none;
+				border-collapse: collapse;
+			}
+
+			th, td {
+				padding: 5px;
+				text-align: left;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			.row {
+				margin-left: -5px;
+				margin-right: -5px;
+			}
+
+			.column {
+				float: left;
+				width: 50%;
+				padding: 5px;
+			}
+
+			.row::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+
+			.tabcontent {
+				display: none;
+				padding: 6px 12px;
+				border: 1px solid #ccc;
+				border-top: none;
+			}
+
+			.tab {
+				overflow: hidden;
+				border: 1px solid #ccc;
+				background-color: #f1f1f1;
+			}
+
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 18px;
+            }
+
+			.tab button:hover {
+				background-color: #ddd;
+			}
+
+			.tab button.active {
+				background-color: #ccc;
+			}
+
+			@media screen and (max-width: 1100px) {
+				.column {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<h1><a id="top">Applied Human Computer Interaction 2022 S2</a></h1>
+		</header>
+
+		<article>
+			<h2>Assignment 2: Usability Evaluation</h2>
+		</article>
+
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'Group Members')" id="defaultOpen"><b>Group Members</b></button>
+			<button class="tablinks" onclick="openTab(event, 'Literature Review')"><b>Literature Review</b></button>
+			<button class="tablinks" onclick="openTab(event, 'Method Used')"><b>Method Used</b></button>
+			<button class="tablinks" onclick="openTab(event, 'Findings Discussion')"><b>Findings Discussion</b></button>
+			<button class="tablinks" onclick="openTab(event, 'Conclusion')"><b>Conclusion</b></button>
+			<button class="tablinks" onclick="openTab(event, 'References')"><b>References</b></button>
+		</div>
+
+		<div id="Group Members" class="tabcontent">
+            <table>
+                <tr>
+                    <th colspan="3">Group Burgundy</th>
+                </tr>
+                <tr>
+                    <td>Kieran Mahon</td>
+                    <td>20113064</td>
+                    <td><a href="mailto:fnh2106@autuni.ac.nz">fnh2106@autuni.ac.nz</a></td>
+                </tr>
+                <tr>
+                    <td>Myles Hosken</td>
+                    <td>20124720</td>
+                    <td><a href="mailto:jky9144@autuni.ac.nz">jky9144@autuni.ac.nz</a></td>
+                </tr>
+                <tr>
+                    <td>Hanul Rheem</td>
+                    <td>20109218</td>
+                    <td><a href="mailto:dgw7626@autuni.ac.nz">dgw7626@autuni.ac.nz</a></td>
+                </tr>
+            </table>
+		</div>
+
+		<div id="Literature Review" class="tabcontent">
+			<p style="line-height:30px;">
+				Text <br/> New line
+			</p>
+
+			<p style="line-height:30px;">
+				<b>Figure 1</b><br/>
+				<i>Figure info</i><br/>
+				<div>
+					<img src="images/img.png" style="width: 650px;">
+				</div>
+				Reference Info<br/><br/>
+			</p>
+		</div>
+
+		<div id="Method Used" class="tabcontent">
+			<p style="line-height:30px;">
+				Text <br/> New line
+			</p>
+
+			<p style="line-height:30px;">
+				<b>Figure 1</b><br/>
+				<i>Figure info</i><br/>
+				<div>
+					<img src="images/img.png" style="width: 650px;">
+				</div>
+				Reference Info<br/><br/>
+			</p>
+		</div>
+
+		<div id="Findings Discussion" class="tabcontent">
+			<p style="line-height:30px;">
+				Text <br/> New line
+			</p>
+
+			<p style="line-height:30px;">
+				<b>Figure 1</b><br/>
+				<i>Figure info</i><br/>
+				<div>
+					<img src="images/img.png" style="width: 650px;">
+				</div>
+				Reference Info<br/><br/>
+			</p>
+		</div>
+
+		<div id="Conclusion" class="tabcontent">
+			<p style="line-height:30px;">
+				Text <br/> New line
+			</p>
+
+			<p style="line-height:30px;">
+				<b>Figure 1</b><br/>
+				<i>Figure info</i><br/>
+				<div>
+					<img src="images/img.png" style="width: 650px;">
+				</div>
+				Reference Info<br/><br/>
+			</p>
+		</div>
+
+		<div id="References" class="tabcontent">
+			<h3>References</h3>
+
+			<ol class="ref">
+				<li>Reference 1</li>
+				<li>Reference 2</li>
+			</ol>
+		</div>
+
+		<script>
+			function openTab(event, page) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(page).style.display = "block";
+				event.currentTarget.className += " active";
+			}
+			document.getElementById("defaultOpen").click();
+		</script>
+	</body>
+</html>
