@@ -178,14 +178,7 @@
 				nature of the software, we will need to be close by as to observe the actual gameplay upon the screen. 
 			</p>
 
-			<p style="line-height:30px;">
-				<b>Figure 1</b><br/>
-				<i>Figure info</i><br/>
-				<div>
-					<img src="images/img.png" style="width: 650px;">
-				</div>
-				Reference Info<br/><br/>
-			</p>
+			
 		</div>
 
 		<div id="Method Used" class="tabcontent">
@@ -205,97 +198,191 @@
 				which are currently unknown to us and that can be represented genuinely from real world users.
 			</p>
 
-			<p style="line-height:30px;">
-				<b>Figure 1</b><br/>
-				<i>Figure info</i><br/>
-				<div>
-					<img src="images/img.png" style="width: 650px;">
-				</div>
-				Reference Info<br/><br/>
-			</p>
+			
 		</div>
 
 		<div id="Findings Discussion" class="tabcontent">
 			<h3>Thematic Data Themes:</h3>
 			<p style="line-height:30px;">
-				Upon post analysation of the user’s observations, it was shown that the game is lacking an entry
-				level for beginners, the game currently has no tutorial or way of letting the user know if what
-				they are doing is beneficial or detrimental. This was presented in a multitude of ways from users
-				looking a little confused or wanting to ask what they have to do. Experienced users may overcome
-				this from having played mobile games before, but for a very entry level player it would be difficult.
-				Another theme was the weapon selection system, users seemed very underwhelmed with being able to
-				choose different weapons which should really be quite exciting and fun. The premise behind the game
-				is utilizing the current state of the weather to add another layer to the game, from the observations
-				it was shown that it really was not at a standard where it should be. Audio cues such as “Is there
-				more weapons?”, “How do I tell which weapon is what?”, “Does this ability do more damage?”, are all
-				suggestive that the weapon selection system needs work to engage the user and give them more power
-				inside the game. Another theme which arose, is that fact that in each level the flying enemies were
-				constantly out of frame, the players had no way of knowing where their target was or where to shoot
-				them. This increased frustration in the users and it was apparent that this was an issue for all
-				participants. However users did enjoy the different element style levels inside the game.
+				Upon post analysis of the user’s observations, it was shown that the game is
+				acking an entry level for beginners, the game currently has no tutorial or way
+				of letting the user know if what they are doing is beneficial or detrimental. This
+				was presented in a multitude of ways from users looking a little confused or
+				wanting to ask what they have to do. To combat this feature we are presenting
+				the idea of a tutorial level that will introduce new players more clearly and
+				explain the overall controls of the game. Experienced users may overcome this
+				from having played mobile games before, but for an entry level player it would
+				be difficult. Another theme was the weapon selection system. Currently there
+				are 4 tiers of weapons: sun, rain, storm and snow. Users showed they were
+				very underwhelmed with being able to choose different weapons by clicking
+				the weapon selection system many times with nothing changing. The weapon
+				selection should really be quite exciting and fun. We are to suggest that the
+				game include more weapons and projectiles to shoot from to avoid the game
+				becoming stale. From the observations it was shown that it really was not at a
+				standard where it should be. Audio cues such as “Is there more weapons?”,
+				“How do I tell which weapon is what?”, “Does this ability do more damage?”,
+				are all suggestive that the weapon selection system needs work to engage the
+				user and give them more power inside the game.
 			</p>
-			
-			</br>
-			
+			<p style="line-height:30px;">
+				<b>(Figure 1. Weapon selection system)</b><br/>
+				<div>
+					<img src="images/Weapon_System.jpg" style="width: 650px;">
+				</div>
+
+			</p>
+			<p style="line-height:30px;">
+				A core feature of the game is utilising the current state of the weather via a live
+				API which adds a unique aspect to the game. Reflecting on the behaviour of the
+				users, it wasn’t clear to them that the game was determining their location and
+				updating the weather in-game according to the state of the weather at their
+				location. More information or indicators could be added to notify the user that
+				the game is doing such a task in the background. Another theme which arose is
+				the fact that in each level the flying enemies were constantly out of frame, the
+				players had no way of knowing where their target was or where to shoot them.
+				This increased frustration among the users and it was apparent that this was an
+				issue for all participants. To further this, the enemies currently all share the
+				same functionality and behaviour in the game, participants were quick to pick
+				up on this. No matter the size or type of enemy, users all felt that they were the
+				same and repetitive, which suggests that for each enemy there exists different
+				behaviour for each enemy type within the game.
+			</p>
+			<p style="line-height:30px;">
+				<b>(Figure 2. EcoRift enemy types shown in the game play)</b><br/>
+				<div>
+					<img src="images/Enemies.jpg" style="width: 650px;">
+				</div>
+
+			</p>
+			<p style="line-height:30px;">
+				One user asked “Can I get money? How do I increase my weapons?”, without a
+				current tutorial screen, or information on how the player increases their
+				weapons within the game, this is a valid concern for a user. Upon implementing
+				a tutorial screen, there will be information on how the progression system
+				works. However, users did enjoy the different element style levels inside the
+				game.
+				
+			</p>
+			<br>
 			<h3>Development Data:</h3>
 			<p style="line-height:30px;">
-				The biggest reoccurring theme from the user observations were the on-screen controls, observing
-				players trying to navigate in-game levels seemed like a challenge at first especially if they were
-				new to the platform. Sensitivity input for this system may need to be reworked, or a new layout of
-				player control UI may need to be implemented to avoid players becoming frustrated and feeling like
-				they can’t move properly. Following on from in-game movement, is the jump feature. Inside the game
-				there is currently a bug which forces the player to jump an extra time if they hold the button down
-				too long, observing users trying to do this led to a lot of them becoming frustrated as it took
-				nearly a minute to navigate over a small piece of terrain. The action listeners responsible for
-				this system will need to be reworked and changed as the game is somewhat unplayable with this in
-				place. The aiming system presented a set of new problems, users struggled to hit the enemies with
-				precision that felt natural. This could be worked to the projectile size being bigger alongside
-				the hitbox for enemies to also be increased, the users had to spend quite a long time trying to
-				aim at one enemy in particular especially if it was moving. As mentioned previously, the flying
-				enemies were constantly out of frame for the user, reducing the current height value of the flying
-				enemies to something more suitable to the users’ view will help resolve this issue. 
+				The biggest recurring theme from the user observations was the on-screen
+				ontrols, observing players trying to navigate in-game levels seemed like a
+				hallenge at first especially if they were new to the platform. “Oh, it’s very hard
+				o jump to x location”. The current on-screen controls are quite unique, and
+				ot a lot of games currently use a double joy-stick system for a side scroller, this
+				s potentially a design flaw and needs to be redesigned to suit such a platform.
+				ensitivity input for this system may need to be reworked, or a new layout of
+				layer control UI may need to be implemented to avoid players becoming
+				rustrated and feeling like they can’t move properly. Suggestions will be made
+				o increase the control the user has over the character in game, giving more
+				ontrol to the user and enhancing their gameplay.
+
+			</p>
+			<p style="line-height:30px;">
+				<b>(Figure 3. showing movement controllers in game play)</b><br/>
+				<div>
+					<img src="images/Controllers_system.jpg" style="width: 650px;">
+				</div>
+
+			</p>
+			<p style="line-height:30px;">
+				To further the on-screen controls is the aiming joystick. One user commented,
+				“This is super hard to aim”. The movement joystick shares the same sensitivity
+				and input as the aiming joystick, so naturally they are both to be looked at. This
+				could be partially solved by increasing the size of the projectiles or the
+				enemies. As said by Zhang D., & Adipat B (2005) mobile application usability
+				testing is presented with its own set of challenges, which highlights the input
+				system being adopted from a desktop computer, potentially being the wrong
+				design overall for the application. Following on from in-game movement, is the
+				jump feature. Inside the game there is currently a bug which forces the player
+				to jump an extra time if they hold the button down too long. Observing users
+				trying to do this led to a lot of them becoming frustrated as it took nearly a
+				minute to navigate over a small piece of terrain. The action listeners
+				responsible for this system will need to be reviewed and changed as the game
+				is somewhat unplayable with this in place. The fact that there is an extra action
+				happening for one input suggests there is an underlying bug in the jump button
+				implementation. This was shown in all 5 participants in each observation. The
+				aiming system presented a set of new problems, users struggled to hit the
+				enemies with precision that felt natural. This could be worked to the projectile
+				size being bigger alongside the hitbox for enemies to also be increased, the
+				users had to spend quite a long time trying to aim at one enemy in particular
+				especially if it was moving. As mentioned previously, the flying enemies were
+				constantly out of frame for the user, reducing the current height value of the
+				flying enemies to something more suitable to the users’ view will help resolve
+				this issue. One user mentioned “How do I get health back?”, “Is there health
+				regeneration?”. Currently the player in game cannot gain or regenerate health,
+				which should be present in such a game in which you take damage and can die,
+				leading to restart the level.
+			</p>
+			<p style="line-height:30px;">
+				<b>(Figure 4. EcoRift displaying health generation bar in game play)</b><br/>
+				<div>
+					<img src="images/HealthBar.jpg" style="width: 650px;">
+				</div>
+
 			</p>
 		</div>
 
 		<div id="Conclusion" class="tabcontent">
 			<p style="line-height:30px;">
-				In summary, usability testing on a mobile game application served as the foundation for this ethnographic observation.
-				 Five people took part in our observations and activities, each participant displayed unique behaviour and actions in 
-				 relation to the mobile game. The general user experience should be improved, and the game should be more accessible to 
-				 new players with a lower barrier to entry. The visual instructions must be clear for a new player to understand each game 
-				 activity. so that the gamer can improve their gaming performance and make the game less interesting. The user interface
-				  image needs to be balanced and simplified, the icon's size needs to be user-friendly, and the game's design needs to be
-				   consistent with the suitable window size for game play in order to improve the game's visual components. There are 
-				   primarily movement control, action control, and menu system control, all of which are displayed in a small icon on the 
-				   user display when trying to control a game. The game control needs to be accessible and scalable, both of which are crucial 
-				   for user game play. Different players prefer different aspects of the game's control system. Similar weapon types can make 
-				   a game more repetitive. Participants found it confusing to select the projectile weapon during the gameplay test. Projectile 
-				   weapons come in four varieties snow, storm, rain, and sun. The projectile images must be distinctive for each projectile 
-				   because those projectiles have similar looks and are challenging to differentiate in game play. Most importantly, the player
-				    found it distracting while the participant was attempting to determine the direction (check point). The player had to take 
-					some time to decide which path was correct or incorrect because the mini map wasn't implemented the during gameplay. 
-					The map should have been visible while playing to make the game more predictable and enjoyable because it made it more 
-					difficult to determine checkpoint locations. Some players were not appropriate for the easy level during game play, 
-					thus the player had to take more time to comprehend how the enemy attacked and approached from each point. Player skill 
-					ratings were not measured by the players. When there are more enemies, the player becomes more disoriented and struggles 
-					to maintain control. The boss and weak enemy designs are quite similar, making it difficult for players to distinguish between 
-					them. A strong silhouette and varied sizes should have been included in the design. The same layout could make the player 
-					confused when they're playing it. In conclusion, the general user experience needs to be improved, from thematic views 
-					such as allowing new players a lower barrier to entry, better explanation of their actions in game dictating if it is
-					 beneficial or detrimental. The weapon system needs to be improved as players really did not find this engaging and would 
-					 feel the same to each of them if there was simply only one weapon to choose from. Users found general movement in the game
-					  somewhat challenging especially when combining movement with jumping. Flying enemies within the game were practically 
-					  invisible to the user and will need to be changed before the next set of usability tests.
+				In summary, a total of five people took part in an unobtrusive observation and
+				each participant displayed both common and unique behaviour whilst testing
+				the product. An accomplished user study by N Akmal Muhamat et al., (2021)
+				suggest that building mobile applications benefit from development principles,
+				for this product, we have found that implementing an agile development
+				methodology would be crucially beneficial as this caters for testing as we go
+				and aligns with Phil Carter’s approach of reducing post test analysis time. The
+				most common theme presented was the current controls system, participants
+				found this very unorthodox to use and will be reworked before future usability
+				tests. The controls should be scaled with each device as not everyone has the
+				same mobile device, they should also be customizable to suit each individual's
+				preferences. The weapon system is very lacklustre and needs significant
+				improvement to keep players engaged, there are currently only four options to
+				choose from. From the four options there is a low amount of difference
+				between each projectile, leaving users confused and unaware of what they
+				currently have selected. Adding in more weapon selection options will be done
+				to combat this. The current weather API is updating the weather in-game
+				based upon the player's current location, yet the user is totally unaware that
+				this is happening. For such a feature the user should be aware of the current
+				weather state and how that impacts the game, information inside the tutorial
+				level will inform the user of this. The range of enemies inside the game left
+				participants feeling like there was more to be had, the enemies in game
+				currently all share the same AI script and only their image is different. Updating
+				each enemy's AI for their respective element is a suitable solution to allow
+				players to feel as if there is a significant difference between them. Users were
+				left feeling unaware of which way to move within the game and there is
+				currently no way of letting users know which way to go. This information can
+				also be included within a tutorial level. The point system and health
+				regeneration information will also be included within the tutorial level to
+				inform users of how the game operates and how they can achieve higher skills
 			</p>
+			<br>
+			<p style="line-height:30px;">
+				In conclusion, the general user experience needs to be improved, from
+				thematic views such as allowing new players a lower barrier to entry, better
+				explanation of their actions in game dictating if it is beneficial or detrimental.
+				The weapon system needs to be improved as players really did not find this
+				engaging and would feel the same to each of them if there was simply only one
+				weapon to choose from. Users found general movement in the game
+				somewhat challenging especially when combining movement with jumping.
+				Flying enemies within the game were practically invisible to the user and will
+				need to be changed before the next set of usability tests.
+			</p>	
 		</div>
 
 		<div id="References" class="tabcontent">
 			<h3>References</h3>
 
 			<ol class="ref">
-				<li>Ethnography: UX Research Methods for Discovery. (n.d.). Retrieved October 20, 2022, from https://www.userinterviews.com/ux-research-field-guide-chapter/ethnography</li>
-				<li>Dongsong Zhang & Boonlit Adipat (2005) Challenges, Methodologies, and Issues in the Usability Testing of Mobile Applications, International Journal of Human–Computer Interaction, 18:3, 293-308, DOI: 10.1207/s15327590ijhc1803_3</li>
-				<li>J. Enriquez and S. Casas, (2016) "Development and evaluation of a framework for generation usability testing for mobile application," 2016 XLII Latin American Computing Conference (CLEI), pp. 1-10, doi: 10.1109/CLEI.2016.7833323.</li>
+				<li>Akmal Muhamat N, Hasan R, Saddki N, Mohd Arshad MR, Ahmad M (2021)
+					Development and usability testing of mobile applications on diet and oral health. PLoS ONE
+					16(9): e0257035. https://doi.org/10.1371/journal.pone.0257035</li>
+				<li>Carter, Phil. (2007). Liberating usability testing. Interactions. 14. 18-22.
+					10.1145/1229863.1229864.</li>
+				<li>Dongsong Zhang & Boonlit Adipat (2005) Challenges, Methodologies, and Issues in the
+					Usability Testing of Mobile Applications, International Journal of Human–Computer
+					Interaction, 18:3, 293-308, DOI: 10.1207/s15327590ijhc1803_3</li>
 			</ol>
 		</div>
 
