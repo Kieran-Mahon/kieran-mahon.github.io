@@ -1,9 +1,38 @@
-﻿.header-img {
+﻿body {
+    font-family: Arial;
+}
+
+.header-img {
     width: 200px;
     height: 200px;
 }
 
 .header-text {
+    font-size: 56px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.header-subtext {
+    font-size: 20px;
+}
+
+.home-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.home-text {
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.port-header {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 nav {
@@ -28,6 +57,7 @@ nav a {
     padding: 14px 16px;
     text-decoration: none;
     float: left;
+    font-size: 22px;
 }
 
 .portfolio-table {
@@ -36,12 +66,19 @@ nav a {
     width: 100%;
 }
 
-.portfolio-table th {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
+    .portfolio-table th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 30px;
+    }
 
-.portfolio-table td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
+    .portfolio-table td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .portfolio-table li {
+        text-align: left;
+    }
