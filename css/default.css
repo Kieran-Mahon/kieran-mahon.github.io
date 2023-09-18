@@ -1,0 +1,47 @@
+﻿.header-img {
+    width: 200px;
+    height: 200px;
+}
+
+.header-text {
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.active-nav {
+    background-color: #04AA6D;
+}
+
+nav a:hover:not(.active-nav) {
+    background-color: #111;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.portfolio-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.portfolio-table th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.portfolio-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
