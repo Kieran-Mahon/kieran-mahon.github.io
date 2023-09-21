@@ -1,5 +1,6 @@
 ﻿body {
     font-family: Arial;
+    background: rgb(220, 255, 255)
 }
 
 .header-img {
@@ -43,7 +44,7 @@ nav {
 }
 
 .active-nav {
-    background-color: #04AA6D;
+    background-color: #3996d9;
 }
 
 nav a:hover:not(.active-nav) {
@@ -54,7 +55,7 @@ nav a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 50px;
     text-decoration: none;
     float: left;
     font-size: 22px;
