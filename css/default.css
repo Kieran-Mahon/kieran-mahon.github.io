@@ -30,7 +30,7 @@
 }
 
 .port-header {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -70,7 +70,7 @@ nav a {
     .portfolio-table th {
         border: 1px solid black;
         border-collapse: collapse;
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .portfolio-table td {
