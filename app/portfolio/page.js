@@ -2,6 +2,7 @@ import Link from "next/link";
 import Project from "@/models/project";
 import PortfolioCard from "@/components/portfolio-ui/portfoliocard";
 import { Button } from "@/components/ui/button";
+import Navbar from "@/components/ui/navbar";
 
 export default function Home() {
 
@@ -305,35 +306,11 @@ export default function Home() {
   //console.log(projects)
   return (
     <>
-      <nav className="ml-auto hidden lg:flex gap-6 px-5 bg-[#333]">
-        <Link
-          href="#"
-          className="nav-bar-item"
-        >
-          Home
-        </Link>
-        <Link
-          href="#"
-          className="nav-bar-item"
-        >
-          About Me
-        </Link>
-        <Link
-          href="#"
-          className="nav-bar-item"
-        >
-          Portfolio
-        </Link>
-        <Link
-          href="#"
-          className="nav-bar-item"
-        >
-          GitHub
-        </Link>
-      </nav>
+      <Navbar page={"Portfolio"} />
+      <br />
 
-      <div className="max-w-full min-h-full px-16">
-        <div className="grid grid-cols-3 gap-5">
+      <div className="max-w-full min-h-full md:px-16 px-4">
+        <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-5">
           {projects.map((project) => (
             <div key={project.name}>
               <PortfolioCard project={project} />

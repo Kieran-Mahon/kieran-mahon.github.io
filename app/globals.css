@@ -71,6 +71,32 @@ body {
   }
 }
 
+.nav-bar-title {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  font-size: x-large;
+  color: white;
+}
+
 .nav-bar-item {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  color: white;
+}
+
+.nav-bar-item-active {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #3996d9;
+}
+
+.nav-bar-item:hover {
+  color: rgb(182, 182, 182);
 }

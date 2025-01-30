@@ -81,16 +81,18 @@ export default function PortfolioCard({project}) {
                       <AlertDialogContent className="max-w-4xl p-2">
                         <AlertDialogHeader>
                           <AlertDialogTitle>
-                            <div className="text-center pb-1">
+                            <div className="text-center">
                             {img.name}
                             </div>
+                          </AlertDialogTitle>
+                          <AlertDialogDescription>
                             <Image
                               src={img.url}
                               width={1000}
                               height={1000}
                               alt={img.name}
                             />
-                          </AlertDialogTitle>
+                          </AlertDialogDescription>
                           <AlertDialogCancel>Close</AlertDialogCancel>
                         </AlertDialogHeader>
                       </AlertDialogContent>
