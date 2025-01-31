@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 @layer base {
@@ -72,7 +79,6 @@ body {
 }
 
 .nav-bar-title {
-  display: flex;
   align-items: center;
   margin-left: 3rem;
   font-size: x-large;
@@ -82,21 +88,31 @@ body {
 .nav-bar-item {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  margin-left: 0rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   color: white;
 }
 
 .nav-bar-item-active {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  margin-left: 0rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   background-color: #3996d9;
 }
 
 .nav-bar-item:hover {
   color: rgb(182, 182, 182);
+}
+
+.home-buttons {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  height: 100%;
+  background-color: #333;
 }

@@ -6,37 +6,41 @@ export default function Navbar({page}) {
 
   return (
     <>
-      <nav className="h-12 bg-[#333] flex">
-        <div className="nav-bar-title font-bold">
+      <nav className="h-12 bg-[#333] flex justify-evenly md:justify-start">
+        <div className="nav-bar-title font-bold hidden md:flex">
           Kieran Mahon
         </div>
 
-        <Link href="/" className="nav-bar-item">
+        <Link href="/" className="nav-bar-item md:ml-4 md:px-5">
           Home
         </Link>
 
         {page === "AboutMe" ? (
-          <div className="nav-bar-item-active">
+          <div className="nav-bar-item-active md:ml-4 md:px-5">
             About Me
           </div>
         ) : (
-          <Link href="/aboutme" className="nav-bar-item">
+          <Link href="/aboutme" className="nav-bar-item md:ml-4 md:px-5">
             About Me
           </Link>
         )}
 
         {page === "Portfolio" ? (
-          <div className="nav-bar-item-active">
+          <div className="nav-bar-item-active md:ml-4 md:px-5">
             Portfolio
           </div>
         ) : (
-          <Link href="/portfolio" className="nav-bar-item">
+          <Link href="/portfolio" className="nav-bar-item md:ml-4 md:px-5">
             Portfolio
           </Link>
         )}
         
-        <Link href="https://github.com/Kieran-Mahon" className="nav-bar-item">
+        <Link href="https://github.com/Kieran-Mahon" className="nav-bar-item md:ml-4 md:px-5">
           GitHub
+        </Link>
+        
+        <Link href="https://www.linkedin.com/in/kierandmahon" className="nav-bar-item md:ml-4 md:px-5">
+          LinkedIn
         </Link>
       </nav>
     </>
