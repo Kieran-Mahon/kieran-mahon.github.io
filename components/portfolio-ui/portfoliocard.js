@@ -39,7 +39,7 @@ export default function PortfolioCard({project}) {
     <Card>
       <CardHeader className="pb-2">
         <div className="grid grid-cols-3">
-          <div className="col-span-3 md:col-span-2">
+          <div className="col-span-3 2xl:col-span-2">
             <CardTitle className="text-xl">
               {project.name}
             </CardTitle>
@@ -47,9 +47,9 @@ export default function PortfolioCard({project}) {
               {project.type}
             </CardDescription>
           </div>
-          <div className="col-span-3 md:col-span-1 flex justify-start md:justify-end mt-1 md:mt-0">
+          <div className="col-span-3 2xl:col-span-1 flex justify-start 2xl:justify-end mt-1 2xl:mt-0">
             {project.links.map((link) => (
-            <Button key={link.name} className="md:ml-2">
+            <Button key={link.name} className="mr-1 2xl:mr-0 2xl:ml-2">
               {link.name}
             </Button>
             ))}
@@ -114,7 +114,7 @@ export default function PortfolioCard({project}) {
         
         <div className="pt-2">
           {project.skills.map((skill) => (
-            <Badge key={skill} className="mx-[2px]">
+            <Badge key={skill} className="mr-[2px]">
               {skill}
             </Badge>
           ))}
