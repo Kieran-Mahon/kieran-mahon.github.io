@@ -8,7 +8,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <div className="max-w-full min-h-full md:mt-6 mt-2 md:px-16 px-4">
+      <div className="max-w-full min-h-full md:mt-4 mt-2 md:px-16 px-4">
         <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-5">
           {projects.map((project) => (
             <div key={project.name}>
