@@ -1,16 +1,13 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Navbar from "@/components/ui/navbar";
 
 export default function Home() {
 
   return (
     <>
-      <Navbar page={"AboutMe"} />
-      <br />
-      <p>
-        about me
-      </p>
+    <div className="md:mt-6 mt-2 mx-6">
+      About me page coming soon!
+    </div>
     </>
   );
 }

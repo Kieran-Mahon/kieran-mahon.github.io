@@ -11,11 +11,17 @@ export default function Navbar({page}) {
           Kieran Mahon
         </div>
 
-        <Link href="/" className="nav-bar-item md:ml-4 md:px-5">
-          Home
-        </Link>
+        {page === "/" ? (
+          <div className="nav-bar-item-active md:ml-4 md:px-5">
+            Home
+          </div>
+        ) : (
+          <Link href="/" className="nav-bar-item md:ml-4 md:px-5">
+            Home
+          </Link>
+        )}
 
-        {page === "AboutMe" ? (
+        {/*page === "/aboutme" ? (
           <div className="nav-bar-item-active md:ml-4 md:px-5">
             About Me
           </div>
@@ -23,9 +29,9 @@ export default function Navbar({page}) {
           <Link href="/aboutme" className="nav-bar-item md:ml-4 md:px-5">
             About Me
           </Link>
-        )}
+        */}
 
-        {page === "Portfolio" ? (
+        {page === "/portfolio" ? (
           <div className="nav-bar-item-active md:ml-4 md:px-5">
             Portfolio
           </div>

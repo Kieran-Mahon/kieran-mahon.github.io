@@ -1,73 +1,46 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import { User, FolderCode, Github, Linkedin} from "lucide-react"
+import ShowCase from "@/components/home-ui/showcase";
+import ShortAboutMe from "@/components/home-ui/short-about-me";
+import MyCanvas from "@/components/home-ui/canvas";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full h-full md:px-10 pt-4 px-4">
-      <div className="md:hidden block">
-        <div className="text-5xl font-bold">
-          Kieran Mahon
-        </div>
-        <div className="text-xl pt-8">
-          Bachelor of Computer and Information Sciences
-          <br />
-          Double Major in Software Development & Data Science
-          <br />
-          7.33 GPA (A- Average)
-        </div>
-      </div>
-
-      <div className="md:flex hidden">
-        <Image
-          src={"/profile.jpg"}
-          width={250}
-          height={250}
-          alt={"Profile Image"}
-        />
-        <div className="pl-5 hidden md:block">
-          <div className="text-5xl font-bold pt-4">
-            Kieran Mahon
+    <>
+      <div className="w-full">
+        <div className="relative w-full bg-blue-100 h-[250px] md:h-[500px]">
+          <div className="w-full h-full blur-xs hidden md:block">
+            <MyCanvas />
           </div>
-          <div className="text-xl pt-8">
-            Bachelor of Computer and Information Sciences
-            <br />
-            Double Major in Software Development & Data Science
-            <br />
-            7.33 GPA (A- Average)
+          <div className="absolute inset-0 h-full w-full flex flex-col items-center justify-center text-[#333]">
+            {/* Desktop */}
+            <div className="hidden md:flex text-6xl border-8 rounded-t-lg border-[#e7e7e7] bg-[#e7e7e7]">
+              Kieran Mahon
+            </div>
+            <div className="hidden md:flex text-3xl border-8 rounded-lg border-[#e7e7e7] bg-[#e7e7e7] text-center">
+              Software Developer - Full Stack - Game Development
+            </div>
+
+            {/* Phone */}
+            <div className="md:hidden flex text-5xl">
+              Kieran Mahon
+            </div>
+            <div className="md:hidden flex text-2xl text-center">
+              Software Developer - Full Stack - Game Development
+            </div>
           </div>
         </div>
+
+        <div className="w-full bg-blue-150">
+          <ShowCase />
+        </div>
+
+        <div className="w-full bg-blue-100">
+          <ShortAboutMe />
+        </div>
       </div>
-      <div className="grid md:grid-cols-4 grid-cols-2 gap-16 mt-16 mb-12 mx-2 flex-grow">
-      <Button className="home-buttons hover:bg-[#333]/95" asChild>
-          <Link href="/aboutme" className="flex-col">
-            <User className="!w-12 !h-12 mb-2"/>
-            About Me
-          </Link>
-        </Button>
-
-        <Button className="home-buttons hover:bg-[#333]/95" asChild>
-          <Link href="/portfolio" className="flex-col">
-            <FolderCode className="!w-12 !h-12 mb-2"/>
-            Portfolio
-          </Link>
-        </Button>
-
-        <Button className="home-buttons hover:bg-[#333]/95" asChild>
-          <Link href="https://github.com/Kieran-Mahon" className="flex-col">
-            <Github className="!w-12 !h-12 mb-2"/>
-            GitHub
-          </Link>
-        </Button>
-
-        <Button className="home-buttons hover:bg-[#333]/95" asChild>
-          <Link href="https://www.linkedin.com/in/kierandmahon" className="flex-col">
-          <Linkedin className="!w-12 !h-12 mb-2"/>
-            LinkedIn
-          </Link>
-        </Button>
-      </div>
-    </div>
+    </>
   );
 }

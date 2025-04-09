@@ -31,12 +31,12 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 
-export default function PortfolioCard({project}) {
+export default function PortfolioCard({project, customStyle, cardHeight}) {
   const hasImages = (project.images.length !== 0);
   const moreThanOneImg = (project.images.length > 1);
 
   return (
-    <Card>
+    <Card className={customStyle} style={{height: cardHeight + "px" }}>
       <CardHeader className="pb-2">
         <div className="grid grid-cols-3">
           <div className="col-span-3 2xl:col-span-2">
@@ -47,6 +47,7 @@ export default function PortfolioCard({project}) {
               {project.type}
             </CardDescription>
           </div>
+
           <div className="col-span-3 2xl:col-span-1 flex justify-start 2xl:justify-end mt-1 2xl:mt-0">
             {project.links.map((link) => (
             <Button key={link.name} className="mr-1 2xl:mr-0 2xl:ml-2">
@@ -54,6 +55,14 @@ export default function PortfolioCard({project}) {
             </Button>
             ))}
           </div>
+        </div>
+
+        <div className="pt-1 pb-1">
+          {project.skills.map((skill) => (
+            <Badge key={skill} className="mr-[2px]">
+              {skill}
+            </Badge>
+          ))}
         </div>
       </CardHeader>
 
@@ -66,23 +75,25 @@ export default function PortfolioCard({project}) {
               align: "start",
               loop: true,
             }}>
-              <CarouselContent className>
+              <CarouselContent>
                 {project.images.map((img) => (
                   <CarouselItem key={img.name}>
                     <AlertDialog>
                       <AlertDialogTrigger>
                         <Image
                           src={img.url}
-                          width={500}
-                          height={50}
+                          width={0}
+                          height={0}
+                          sizes="100vw"
                           alt={img.name}
+                          className="w-auto h-auto"
                         />
                       </AlertDialogTrigger>
                       <AlertDialogContent className="max-w-4xl p-2">
                         <AlertDialogHeader>
                           <AlertDialogTitle>
                             <div className="text-center">
-                            {img.name}
+                              {img.name}
                             </div>
                           </AlertDialogTitle>
                           <AlertDialogDescription>
@@ -111,14 +122,6 @@ export default function PortfolioCard({project}) {
         }
 
         {project.description}
-        
-        <div className="pt-2">
-          {project.skills.map((skill) => (
-            <Badge key={skill} className="mr-[2px]">
-              {skill}
-            </Badge>
-          ))}
-        </div>
         
       </CardContent>
     </Card>
