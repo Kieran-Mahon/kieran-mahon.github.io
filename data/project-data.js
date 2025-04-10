@@ -26,7 +26,7 @@ export const getProjects = () => {
     [
       {
         "name" : "Viewing Area",
-        "url" : "/portfolio/EventViewer/img1.PNG"
+        "url" : "./portfolio/EventViewer/img1.PNG"
       }
     ],
     [],
@@ -51,11 +51,11 @@ export const getProjects = () => {
     [
       {
         "name" : "Gobal View Page",
-        "url" : "/portfolio/ATPTViewer/img1.PNG"
+        "url" : "./portfolio/ATPTViewer/img1.PNG"
       },
       {
         "name" : "Route View Page (Viewing MTIA Ferry)",
-        "url" : "/portfolio/ATPTViewer/img2.PNG"
+        "url" : "./portfolio/ATPTViewer/img2.PNG"
       }
     ],
     [
@@ -95,27 +95,27 @@ export const getProjects = () => {
     [
       {
         "name" : "Start Screen",
-        "url" : "/portfolio/LastAlert/img1.PNG"
+        "url" : "./portfolio/LastAlert/img1.PNG"
       },
       {
         "name" : "Settings Screen",
-        "url" : "/portfolio/LastAlert/img2.PNG"
+        "url" : "./portfolio/LastAlert/img2.PNG"
       },
       {
         "name" : "In Game - Room 1",
-        "url" : "/portfolio/LastAlert/img3.PNG"
+        "url" : "./portfolio/LastAlert/img3.PNG"
       },
       {
         "name" : "In Game - Room 2",
-        "url" : "/portfolio/LastAlert/img4.PNG"
+        "url" : "./portfolio/LastAlert/img4.PNG"
       },
       {
         "name" : "In Game - Room 3",
-        "url" : "/portfolio/LastAlert/img5.PNG"
+        "url" : "./portfolio/LastAlert/img5.PNG"
       },
       {
         "name" : "In Game - Room 4",
-        "url" : "/portfolio/LastAlert/img6.PNG"
+        "url" : "./portfolio/LastAlert/img6.PNG"
       }
     ],
     [
@@ -141,27 +141,27 @@ export const getProjects = () => {
     [
       {
         "name" : "Start Screen",
-        "url" : "/portfolio/KeepOnRolling/img1.PNG"
+        "url" : "./portfolio/KeepOnRolling/img1.PNG"
       },
       {
         "name" : "Customisation Screen",
-        "url" : "/portfolio/KeepOnRolling/img2.PNG"
+        "url" : "./portfolio/KeepOnRolling/img2.PNG"
       },
       {
         "name" : "Best Score Game Mode",
-        "url" : "/portfolio/KeepOnRolling/img3.PNG"
+        "url" : "./portfolio/KeepOnRolling/img3.PNG"
       },
       {
         "name" : "Levels Game Mode",
-        "url" : "/portfolio/KeepOnRolling/img4.PNG"
+        "url" : "./portfolio/KeepOnRolling/img4.PNG"
       },
       {
         "name" : "Level Selection Screen",
-        "url" : "/portfolio/KeepOnRolling/img5.PNG"
+        "url" : "./portfolio/KeepOnRolling/img5.PNG"
       },
       {
         "name" : "Level Completed Screen",
-        "url" : "/portfolio/KeepOnRolling/img6.PNG"
+        "url" : "./portfolio/KeepOnRolling/img6.PNG"
       }
     ],
     [
@@ -191,27 +191,27 @@ export const getProjects = () => {
     [
       {
         "name" : "Screen Screen",
-        "url" : "/portfolio/DungeonCrawl/img1.PNG"
+        "url" : "./portfolio/DungeonCrawl/img1.PNG"
       },
       {
         "name" : "In Game - Level 1",
-        "url" : "/portfolio/DungeonCrawl/img2.PNG"
+        "url" : "./portfolio/DungeonCrawl/img2.PNG"
       },
       {
         "name" : "In Game - Fighting An Enemy",
-        "url" : "/portfolio/DungeonCrawl/img3.PNG"
+        "url" : "./portfolio/DungeonCrawl/img3.PNG"
       },
       {
         "name" : "In Game - Killed Enemy/Reward Screen",
-        "url" : "/portfolio/DungeonCrawl/img4.PNG"
+        "url" : "./portfolio/DungeonCrawl/img4.PNG"
       },
       {
         "name" : "In Game - Found Item Screen",
-        "url" : "/portfolio/DungeonCrawl/img5.PNG"
+        "url" : "./portfolio/DungeonCrawl/img5.PNG"
       },
       {
         "name" : "Leaderboard Screen",
-        "url" : "/portfolio/DungeonCrawl/img6.PNG"
+        "url" : "./portfolio/DungeonCrawl/img6.PNG"
       },
     ],
     [
@@ -236,27 +236,27 @@ export const getProjects = () => {
     [
       {
         "name" : "Start Screen",
-        "url" : "/portfolio/MoneyClicker/img1.PNG"
+        "url" : "./portfolio/MoneyClicker/img1.PNG"
       },
       {
         "name" : "Saves Screen",
-        "url" : "/portfolio/MoneyClicker/img2.PNG"
+        "url" : "./portfolio/MoneyClicker/img2.PNG"
       },
       {
         "name" : "Customise Screen",
-        "url" : "/portfolio/MoneyClicker/img3.PNG"
+        "url" : "./portfolio/MoneyClicker/img3.PNG"
       },
       {
         "name" : "In Game ",
-        "url" : "/portfolio/MoneyClicker/img4.PNG"
+        "url" : "./portfolio/MoneyClicker/img4.PNG"
       },
       {
         "name" : "Loot Box Screen",
-        "url" : "/portfolio/MoneyClicker/img5.PNG"
+        "url" : "./portfolio/MoneyClicker/img5.PNG"
       },
       {
         "name" : "In Game - Achievements Screen",
-        "url" : "/portfolio/MoneyClicker/img6.PNG"
+        "url" : "./portfolio/MoneyClicker/img6.PNG"
       }
     ],
     [
@@ -284,7 +284,7 @@ export const getProjects = () => {
     [
       {
         "name" : "Draw Screen",
-        "url" : "/portfolio/NetworkedDrawingBoard/img1.PNG"
+        "url" : "./portfolio/NetworkedDrawingBoard/img1.PNG"
       }
     ],
     [
@@ -310,11 +310,11 @@ export const getProjects = () => {
     [
       {
         "name" : "Options Menu",
-        "url" : "/portfolio/LandDivision/img1.PNG"
+        "url" : "./portfolio/LandDivision/img1.PNG"
       },
       {
         "name" : "Subdivision Screen",
-        "url" : "/portfolio/LandDivision/img2.PNG"
+        "url" : "./portfolio/LandDivision/img2.PNG"
       }
     ],
     [

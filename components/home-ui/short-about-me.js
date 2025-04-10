@@ -6,7 +6,7 @@ export default function ShortAboutMe() {
     <div className="py-6 px-20">
       <div className="flex items-center justify-center">
         <Image
-          src={"/profile.jpg"}
+          src={"./profile.jpg"}
           width={400}
           height={400}
           alt={"Profile Image"}
