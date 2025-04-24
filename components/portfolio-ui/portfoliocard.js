@@ -80,16 +80,14 @@ export default function PortfolioCard({project, customStyle, cardHeight}) {
             }}>
               <CarouselContent>
                 {project.images.map((img) => (
-                  <CarouselItem key={img.name}>
+                  <CarouselItem key={img.name} className="flex justify-center items-center">
                     <AlertDialog>
-                      <AlertDialogTrigger>
+                      <AlertDialogTrigger className="relative w-full h-64">
                         <Image
                           src={img.url}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
                           alt={img.name}
-                          className="w-auto h-auto"
+                          fill
+                          className="object-contain"
                         />
                       </AlertDialogTrigger>
                       <AlertDialogContent className="max-w-4xl p-2">
@@ -102,9 +100,9 @@ export default function PortfolioCard({project, customStyle, cardHeight}) {
                           <AlertDialogDescription>
                             <Image
                               src={img.url}
+                              alt={img.name}
                               width={1000}
                               height={1000}
-                              alt={img.name}
                             />
                           </AlertDialogDescription>
                           <AlertDialogCancel>Close</AlertDialogCancel>
