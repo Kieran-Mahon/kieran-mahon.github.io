@@ -99,23 +99,23 @@ export const getProjects = () => {
       },
       {
         "name" : "Settings Screen",
-        "url" : "./portfolio/LastAlert/img2.PNG"
+        "url" : "./portfolio/LastAlert/img2.png"
       },
       {
         "name" : "In Game - Room 1",
-        "url" : "./portfolio/LastAlert/img3.PNG"
+        "url" : "./portfolio/LastAlert/img3.png"
       },
       {
         "name" : "In Game - Room 2",
-        "url" : "./portfolio/LastAlert/img4.PNG"
+        "url" : "./portfolio/LastAlert/img4.png"
       },
       {
         "name" : "In Game - Room 3",
-        "url" : "./portfolio/LastAlert/img5.PNG"
+        "url" : "./portfolio/LastAlert/img5.png"
       },
       {
         "name" : "In Game - Room 4",
-        "url" : "./portfolio/LastAlert/img6.PNG"
+        "url" : "./portfolio/LastAlert/img6.png"
       }
     ],
     [

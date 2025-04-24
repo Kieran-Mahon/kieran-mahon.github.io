@@ -52,7 +52,7 @@ export default function PortfolioCard({project, customStyle, cardHeight}) {
           <div className="col-span-3 2xl:col-span-1 flex justify-start 2xl:justify-end mt-1 2xl:mt-0">
             {project.links.map((link) => (
             <Button asChild key={link.name} className="mr-1 2xl:mr-0 2xl:ml-2">
-              <Link href={link.url}>
+              <Link target="_blank" href={link.url}>
                 {link.name}
               </Link>
             </Button>
