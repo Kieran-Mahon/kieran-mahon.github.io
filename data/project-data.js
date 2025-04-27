@@ -30,8 +30,8 @@ export const getProjects = () => {
       }
     ],
     [],
-    685,
-    685
+    695,
+    695
   ));
   projects.push(new Project(
     "AT PT Viewer",
@@ -68,8 +68,8 @@ export const getProjects = () => {
         "url" : "https://kieran-mahon.github.io/AT_PT_Viewer"
       }
     ],
-    685,
-    685
+    695,
+    695
   ));
   projects.push(new Project(
     "Last Alert",
@@ -124,8 +124,8 @@ export const getProjects = () => {
         "url" : "https://github.com/Kieran-Mahon/Last-Alert-Game"
       }
     ],
-    685,
-    685
+    695,
+    695
   ));
 
   projects.push(new Project(
@@ -174,8 +174,8 @@ export const getProjects = () => {
         "url" : "https://kieran-mahon.github.io/KeepOnRolling/"
       }
     ],
-    765,
-    765
+    720,
+    720
   ));
   projects.push(new Project(
     "Dungeon Crawl",
@@ -220,8 +220,8 @@ export const getProjects = () => {
         "url" : "https://github.com/Kieran-Mahon/Dungeon_Crawl"
       }
     ],
-    765,
-    765
+    720,
+    720
   ));
   projects.push(new Project(
     "Money Clicker Game",
@@ -265,8 +265,8 @@ export const getProjects = () => {
         "url" : "https://studio.code.org/projects/gamelab/4JtSmSBAIFgj_QVKwKbI8L_6YL0jxMB8WJBWvWjSTGI"
       }
     ],
-    765,
-    765
+    720,
+    720
   ));
 
   projects.push(new Project(
@@ -293,8 +293,8 @@ export const getProjects = () => {
         "url" : "https://github.com/Kieran-Mahon/ADA_Assessment1/"
       }
     ],
-    680,
-    680
+    550,
+    550
   ));
   projects.push(new Project(
     "Land Division",
@@ -323,8 +323,8 @@ export const getProjects = () => {
         "url" : "https://github.com/Kieran-Mahon/ADA_Assessment2/"
       }
     ],
-    680,
-    680
+    550,
+    550
   ));
   
   return projects;
