@@ -122,7 +122,9 @@ export default function PortfolioCard({project, customStyle, cardHeight}) {
           </div>
         }
 
-        {project.description}
+        <p className="pt-1">
+          {project.description}
+        </p>
         
       </CardContent>
     </Card>
