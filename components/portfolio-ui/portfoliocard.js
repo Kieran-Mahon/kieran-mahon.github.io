@@ -97,12 +97,12 @@ export default function PortfolioCard({project, customStyle, cardHeight}) {
                               {img.name}
                             </div>
                           </AlertDialogTitle>
-                          <AlertDialogDescription>
+                          <AlertDialogDescription className="flex justify-center items-center">
                             <Image
                               src={img.url}
                               alt={img.name}
-                              width={1000}
-                              height={1000}
+                              width={800}
+                              height={800}
                             />
                           </AlertDialogDescription>
                           <AlertDialogCancel>Close</AlertDialogCancel>
